@@ -53,7 +53,7 @@ vi /var/lib/docker/volumes/ct-volume1/_data/index.html
 docker container stop nginx-container
 ```
 ```
-docker rm container nginx-container
+docker container rm nginx-container
 ```
 ```
 docker ps -a
