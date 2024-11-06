@@ -19,6 +19,7 @@ service apache2 start
 ```
 service apache2 status
 ```
+Press: CTRL+P+Q
 ```
 curl localhost:80
 ```
