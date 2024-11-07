@@ -84,38 +84,7 @@ ping <ip addr of ct3> -c 5
 Press Ctrl+P+Q, to switch back to Host
 
 
-### Task 3: Create a new docker bridge and check connectivity between containers of different bridges
-```
-docker network create --driver bridge ct-bridge2
-```
-```
-docker run -it --network ct-bridge2 --name=ct5 busybox
-```
-Press Ctrl+P+Q, to switch back to Host
-```
-docker run -it --network ct-bridge2 --name=ct6 busybox
-```
-Press Ctrl+P+Q, to switch back to Host
-```
-docker attach ct5
-```
-```
-ping -c 5 ct6
-```
-```
-ip addr
-```
-```
-ping -c 5 ct3
-```
-```
-ping -c 5 ct4
-```
-
-Press Ctrl+P+Q, to switch back to Host
-
-
-### Task 4: Using 'Docker network connect' command create a successful connection between containers of different bridges
+### Task 3: Using 'Docker network connect' command create a successful connection between containers of different bridges
 ```
 docker network ls
 ```
@@ -129,7 +98,7 @@ docker network inspect ct-bridge1
 docker exec -it ct1 sh
 ```
 ```
-ping -c 5 ct5
+ping -c 5 ct3
 ```
 Press Ctrl+P+Q, to switch back to Host
 ```
@@ -156,10 +125,10 @@ apt install curl
 ```
 curl https://8.8.8.8
 ```
-Also if you check the default port 80, the container would not be accessible since we have not published it
+Also if you check the default port 80, the container will not be accessible since we have not published it
 
 
-### Task 5: Launch a container to host network
+### Task 4: Launch a container to host network
 ```
 docker run -d --network host --name=ct7 nginx
 ```
@@ -218,7 +187,7 @@ docker ps -a
 docker inspect host
 ```
 
-### Task 6: Launch a container to none network 
+### Task 5: Launch a container to none network 
 ```
 docker run -it --network none --name=ct11 nginx
 ```
