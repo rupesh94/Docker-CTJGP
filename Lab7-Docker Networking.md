@@ -133,11 +133,15 @@ apt install inetutils-ping
 ```
 ping 8.8.8.8
 ```
-Also if you check the default port 80, the container would be accessible although we have not published the container
+Also if you check the default port 80, the container would be accessible although we have not published the container since the default port for an nginx web-server is 80
 
 Press Ctrl+P+Q, to switch back to Host
 ```
 docker network inspect host
+```
+You can have multiple containers in the same host network only if they are not using the same port
+```
+docker run -d --network host python:3 sh -c "python -m http.server 3000"
 ```
 
 
