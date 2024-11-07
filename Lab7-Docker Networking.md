@@ -139,30 +139,8 @@ Press Ctrl+P+Q, to switch back to Host
 ```
 docker network inspect host
 ```
-```
-docker run -d --network host --name=ct8 httpd
-```
-```
-docker run -d --network host --name=ct9 nginx
-```
-```
-docker ps -a
-```
-```
-docker stop ct7
-```
-```
-docker ps -a
-```
-```
-docker run -d --network host --name=ct10 httpd
-```
-```
-docker ps -a
-```
-```
-docker inspect host
-```
+
+
 
 ### Task 5: Launch a container to none network 
 ```
