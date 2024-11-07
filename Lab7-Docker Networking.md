@@ -133,13 +133,6 @@ apt install inetutils-ping
 ```
 ping 8.8.8.8
 ```
-Download the curl utility if not already available
-```
-apt install curl
-```
-```
-curl https://8.8.8.8
-```
 Also if you check the default port 80, the container would be accessible although we have not published the container
 
 Press Ctrl+P+Q, to switch back to Host
