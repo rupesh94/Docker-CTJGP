@@ -148,7 +148,7 @@ docker run -d --network host python:3 sh -c "python -m http.server 3000"
 
 ### Task 5: Launch a container to none network 
 ```
-docker run -it --network none --name=ct11 nginx
+docker run -it --network none --name=ct11 nginx bash
 ```
 Also to check the network connection to the outside world we can run the below commands
 ```
