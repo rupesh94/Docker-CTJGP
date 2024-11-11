@@ -22,7 +22,7 @@ docker build -t my-app:1.0 .
 
 Tag the Image:
 ```
-docker tag my-app:1.0 myusername/my-app:1.0
+docker tag my-app:1.0 meharcloudthat/my-app:1.0
 ```
 
 Log in to Docker Hub before pushing images to Docker Hub. You will be prompted for your Docker Hub username and password
@@ -33,6 +33,6 @@ docker login
 
 Push the Image:
 ```
-docker push myusername/my-app:1.0
+docker push meharcloudthat/my-app:1.0
 ```
 
