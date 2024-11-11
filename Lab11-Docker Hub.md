@@ -1,12 +1,5 @@
 ## Common Docker Hub Commands
 
-Login to Docker Hub
-Before pushing or pulling images to/from Docker Hub, you need to log in:
-```
-docker login
-```
-You will be prompted for your Docker Hub username and password.
-
 Search for Images
 ```
 docker search <keyword>
@@ -30,6 +23,13 @@ Tag the Image:
 ```
 docker tag my-app:1.0 myusername/my-app:1.0
 ```
+
+Login to Docker Hub
+Before pushing or pulling images to/from Docker Hub, you need to log in:
+```
+docker login
+```
+You will be prompted for your Docker Hub username and password.
 Push the Image:
 ```
 docker push myusername/my-app:1.0
