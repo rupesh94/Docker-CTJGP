@@ -1,4 +1,4 @@
-## Building Efficient Docker Images
+## Multi Stage Build
 
 ### Task 1: Create a golang Docker Image to print Hello World
 ```
