@@ -2,12 +2,12 @@
 
 Search for Images
 ```
-docker search <keyword>
+docker search ubuntu
 ```
 
 Pull an Image from Docker Hub
 ```
-docker pull <image-name>:<tag>
+docker pull ubuntu
 ```
 
 List Local Images
@@ -19,17 +19,19 @@ Create an Image (Using docker build or coomit)
 ```
 docker build -t my-app:1.0 .
 ```
+
 Tag the Image:
 ```
 docker tag my-app:1.0 myusername/my-app:1.0
 ```
 
 Login to Docker Hub
-Before pushing or pulling images to/from Docker Hub, you need to log in:
+You need to log in before pushing or pulling images to/from Docker Hub.You will be prompted for your Docker Hub username and password
 ```
 docker login
 ```
-You will be prompted for your Docker Hub username and password.
+
+
 Push the Image:
 ```
 docker push myusername/my-app:1.0
