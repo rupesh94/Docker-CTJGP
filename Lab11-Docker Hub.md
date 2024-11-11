@@ -25,7 +25,7 @@ Tag the Image:
 docker tag my-app:1.0 myusername/my-app:1.0
 ```
 
-You need to log in to Docker Hub before pushing images to Docker Hub.You will be prompted for your Docker Hub username and password
+Log in to Docker Hub before pushing images to Docker Hub. You will be prompted for your Docker Hub username and password
 ```
 docker login
 ```
