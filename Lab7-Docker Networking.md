@@ -105,7 +105,7 @@ Press Ctrl+P+Q, to switch back to Host
 docker network connect bridge ct3
 ```
 ```
-docker network inspect the bridge
+docker network inspect bridge
 ```
 Also to check the network connection to the outside world we can run the below commands
 ```
